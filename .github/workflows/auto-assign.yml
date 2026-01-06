@@ -8,6 +8,9 @@ on:
         required: true
         type: string
 
+permissions:
+  issues: write
+
 jobs:
   auto-assign:
     runs-on: ubuntu-latest
