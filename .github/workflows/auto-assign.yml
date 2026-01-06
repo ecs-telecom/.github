@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign issue
-        uses: actions-ecosystem/action-assign@v1
+        uses: actions-ecosystem/action-add-assignees@v1
         with:
           assignees: ${{ inputs.assignees }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
